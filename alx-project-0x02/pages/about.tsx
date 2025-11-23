@@ -1,8 +1,11 @@
 import Button from "@/components/common/Button";
+import Header from "@/components/layout/Header";
+
 
 export default function About() {
   return (
     <div style={{ padding: "20px" }}>
+        <Header/>
       <h1>About Page</h1>
       <p>Learn more about us here.</p>
 

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Card from "@/components/common/Card";
 import PostModal from "@/components/common/PostModal";
+import Header from "@/components/layout/Header";
+
 
 interface Post {
   title: string;
@@ -22,6 +24,7 @@ export default function Home() {
 
   return (
     <div style={{ padding: "20px" }}>
+          <Header />
       <h1>Home Page</h1>
 
       <button 
