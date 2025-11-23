@@ -24,7 +24,8 @@ export default function PostModal({ open, onClose, onAdd }: PostModalProps) {
       <div style={modalStyle}>
         <h2>Add Post</h2>
 
-        <input
+       <form >
+         <input
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -39,6 +40,7 @@ export default function PostModal({ open, onClose, onAdd }: PostModalProps) {
         />
 
         <button onClick={handleSubmit}>Submit</button>
+       </form>
       </div>
     </div>
   );
