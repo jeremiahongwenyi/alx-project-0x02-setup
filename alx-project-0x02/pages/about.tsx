@@ -1,13 +1,32 @@
-import React from 'react'
+import Button from "@/components/common/Button";
 
-function about() {
+export default function About() {
   return (
-      <div>
+    <div style={{ padding: "20px" }}>
       <h1>About Page</h1>
       <p>Learn more about us here.</p>
+
+      <div style={{ display: "flex", gap: "10px", marginTop: "20px" }}>
+
+        <Button 
+          label="Small Button" 
+          size="small" 
+          shape="rounded-sm"
+        />
+
+        <Button 
+          label="Medium Button" 
+          size="medium" 
+          shape="rounded-md"
+        />
+
+        <Button 
+          label="Large Button" 
+          size="large" 
+          shape="rounded-full"
+        />
+
+      </div>
     </div>
-
-  )
+  );
 }
-
-export default about
