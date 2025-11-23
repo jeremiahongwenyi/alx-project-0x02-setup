@@ -1,5 +1,5 @@
 import React from 'react'
-import CardProps from '@/interfaces'
+import {CardProps} from '@/interfaces'
 
 function Card({title,content}:CardProps) {
   return (
